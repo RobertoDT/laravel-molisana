@@ -1,0 +1,26 @@
+main{
+  background-color: yellow;
+
+  .wrapper{
+    @include wrapper;
+
+    h2{
+      padding: 20px;
+      font-family: $headerNav;
+      color: $mainColor;
+      font-size: 35px;
+    }
+
+    .main-list{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+
+
+      & img{
+        width: 500px;
+        margin: 20px;
+      }
+    }
+  }
+}
