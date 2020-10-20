@@ -56,8 +56,64 @@ main .wrapper .main-list img {
   margin: 20px;
 }
 
+footer {
+  font-family: "Roboto", sans-serif;
+}
+footer .footer-top {
+  margin: 100px 0 10px 0;
+}
 footer .footer-top .wrapper {
   width: 1700px;
   height: 100%;
   margin: auto;
+  display: flex;
+}
+footer .footer-top .wrapper .footer-left {
+  color: #a6a6a6;
+}
+footer .footer-top .wrapper .footer-left .footer-logo {
+  width: 400px;
+}
+footer .footer-top .wrapper .footer-left .info-molisana {
+  margin-top: 30px;
+}
+footer .footer-top .wrapper .footer-left .info-molisana p {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 5px 0;
+}
+footer .footer-top .wrapper .footer-right {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-top .wrapper .footer-right .box {
+  margin: 0 150px;
+}
+footer .footer-top .wrapper .footer-right .box h2 {
+  color: #808080;
+  font-size: 30px;
+}
+footer .footer-top .wrapper .footer-right .box .pastificio-list,
+footer .footer-top .wrapper .footer-right .box .collezione-list,
+footer .footer-top .wrapper .footer-right .box .prodotti-list {
+  list-style: none;
+}
+footer .footer-top .wrapper .footer-right .box .pastificio-list li,
+footer .footer-top .wrapper .footer-right .box .collezione-list li,
+footer .footer-top .wrapper .footer-right .box .prodotti-list li {
+  margin: 20px 0;
+}
+footer .footer-top .wrapper .footer-right .box .pastificio-list li a,
+footer .footer-top .wrapper .footer-right .box .collezione-list li a,
+footer .footer-top .wrapper .footer-right .box .prodotti-list li a {
+  text-decoration: none;
+  color: #a6a6a6;
+  font-size: 20px;
+  font-weight: lighter;
+}
+footer .footer-bottom {
+  height: 200px;
+  background-image: url("../img/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
