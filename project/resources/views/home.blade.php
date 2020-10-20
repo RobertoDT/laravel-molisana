@@ -37,7 +37,13 @@ foreach ($data as $product) {
       <ul class="main-list">
         @foreach ($lunga as $product)
         <li>
-          <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          <div class="layover">
+            <div class="layover-icon">
+              <h3><a href="#">{{$product["titolo"]}}</a></h3>
+              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+            </div>
+            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          </div>
         </li>
         @endforeach
       </ul>
@@ -45,7 +51,13 @@ foreach ($data as $product) {
       <ul class="main-list">
         @foreach ($corta as $product)
         <li>
-          <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          <div class="layover">
+            <div class="layover-icon">
+              <h3><a href="#">{{$product["titolo"]}}</a></h3>
+              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+            </div>
+            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          </div>
         </li>
         @endforeach
       </ul>
@@ -53,7 +65,13 @@ foreach ($data as $product) {
       <ul class="main-list">
         @foreach ($cortissima as $product)
         <li>
-          <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          <div class="layover">
+            <div class="layover-icon">
+              <h3><a href="#">{{$product["titolo"]}}</a></h3>
+              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+            </div>
+            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+          </div>
         </li>
         @endforeach
       </ul>

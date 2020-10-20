@@ -18,9 +18,45 @@ main{
       display: flex;
       flex-wrap: wrap;
 
+      .layover{
+        position: relative;
+
+        .layover-icon{
+          width: calc(100% - 40px);
+          height: calc(100% - 40px);
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+
+        &:hover .layover-icon{
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      h3, .icona{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
       & img{
         width: 500px;
         margin: 20px;
+      }
+
+      h3{
+
+        a{
+          text-decoration: none;
+          color: red;
+          text-transform: uppercase;
+        }
+      }
+
+      .icona{
+        width: 20px;
       }
     }
   }

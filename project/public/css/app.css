@@ -51,9 +51,36 @@ main .wrapper .main-list {
   display: flex;
   flex-wrap: wrap;
 }
+main .wrapper .main-list .layover {
+  position: relative;
+}
+main .wrapper .main-list .layover .layover-icon {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+main .wrapper .main-list .layover:hover .layover-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+main .wrapper .main-list h3, main .wrapper .main-list .icona {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 main .wrapper .main-list img {
   width: 500px;
   margin: 20px;
+}
+main .wrapper .main-list h3 a {
+  text-decoration: none;
+  color: red;
+  text-transform: uppercase;
+}
+main .wrapper .main-list .icona {
+  width: 20px;
 }
 
 footer {
