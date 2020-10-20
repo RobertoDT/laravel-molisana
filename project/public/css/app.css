@@ -8,54 +8,56 @@ header {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-
 header .logo-molisana {
   width: 300px;
   margin: 50px;
 }
-
 header nav .header-nav-list {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-
 header nav .header-nav-list li {
   margin-bottom: 30px;
 }
-
 header nav .header-nav-list li a {
   text-decoration: none;
   font-size: 30px;
   color: black;
   padding: 30px;
 }
-
-main {
-  background-color: yellow;
+header nav .header-nav-list li a.active {
+  background-color: #b3e5fc;
 }
 
+main {
+  background-image: url("../img/fondo-pag-speciali.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 main .wrapper {
   width: 1700px;
   height: 100%;
   margin: auto;
 }
-
 main .wrapper h2 {
   padding: 20px;
   font-family: "Roboto", sans-serif;
   color: #002D75;
   font-size: 35px;
 }
-
 main .wrapper .main-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-
 main .wrapper .main-list img {
   width: 500px;
   margin: 20px;
 }
 
+footer .footer-top .wrapper {
+  width: 1700px;
+  height: 100%;
+  margin: auto;
+}

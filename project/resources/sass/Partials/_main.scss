@@ -1,5 +1,7 @@
 main{
-  background-color: yellow;
+  background-image: url("../img/fondo-pag-speciali.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   .wrapper{
     @include wrapper;
@@ -15,7 +17,6 @@ main{
       list-style: none;
       display: flex;
       flex-wrap: wrap;
-
 
       & img{
         width: 500px;
