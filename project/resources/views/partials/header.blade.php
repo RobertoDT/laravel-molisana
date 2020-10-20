@@ -10,7 +10,7 @@
         <a class="active" href="{{route('prodotti')}}">Prodotti</a>
       </li>
       <li>
-        <a href="{{route('news')}}">news</a>
+        <a href="{{route('news')}}">News</a>
       </li>
     </ul>
   </nav>

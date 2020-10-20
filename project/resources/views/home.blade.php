@@ -40,13 +40,14 @@ foreach ($data as $product) {
           <div class="layover">
             <div class="layover-icon">
               <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
             </div>
-            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+            <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>
         </li>
         @endforeach
       </ul>
+
       <h2>LE CORTE</h2>
       <ul class="main-list">
         @foreach ($corta as $product)
@@ -54,13 +55,14 @@ foreach ($data as $product) {
           <div class="layover">
             <div class="layover-icon">
               <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
             </div>
-            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+            <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>
         </li>
         @endforeach
       </ul>
+      
       <h2>LE CORTISSIME</h2>
       <ul class="main-list">
         @foreach ($cortissima as $product)
@@ -68,9 +70,9 @@ foreach ($data as $product) {
           <div class="layover">
             <div class="layover-icon">
               <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
             </div>
-            <img src="{{$product['src']}}" alt="img_pasta_lunga">
+            <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>
         </li>
         @endforeach
