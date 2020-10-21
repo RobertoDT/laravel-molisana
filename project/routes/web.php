@@ -14,12 +14,34 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+  return view('home');
 })->name("home");
 
 Route::get('/prodotti', function () {
-    return view('prodotti');
+
+  $data = config("pasta");
+
+  $paste = [];
+
+  foreach ($data as $key => $prodotto) {
+    $prodotto["id"] = $key;
+    $paste[$prodotto["tipo"]][] = $prodotto;
+  }
+
+  return view('prodotti', ["paste" => $paste]);
 })->name("prodotti");
+
+//nuova rotta per prodotto singolo
+Route::get('/prodotti/show/{id}', function ($id) {
+
+  if(config("pasta.$id") == null){
+    abort(404);
+  }
+
+  $prodotto = config("pasta.$id");
+
+  return view('prodotto-singolo', ["prodotto" => $prodotto]);
+});
 
 Route::get('/news', function () {
     return view('news');

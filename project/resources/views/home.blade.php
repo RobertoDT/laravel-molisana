@@ -62,7 +62,7 @@ foreach ($data as $product) {
         </li>
         @endforeach
       </ul>
-      
+
       <h2>LE CORTISSIME</h2>
       <ul class="main-list">
         @foreach ($cortissima as $product)
