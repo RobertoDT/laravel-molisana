@@ -6,11 +6,11 @@
 
 
 @section("mainContent")
-  <h1>Pagina Prodotti</h1>
+  <main class="home-main">
+    <h1>Pagina Prodotti</h1>
+    <div class="wrapper">
 
-  <div class="wrapper">
-
-    @foreach($paste as $key => $tipo)
+      @foreach($paste as $key => $tipo)
 
       <h2>{{strtoupper($key)}}</h2>
       <ul class="main-list">
@@ -27,6 +27,7 @@
         @endforeach
       </ul>
 
-    @endforeach
+      @endforeach
+  </main>
 
 @endsection

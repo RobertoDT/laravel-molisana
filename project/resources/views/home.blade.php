@@ -30,7 +30,7 @@ foreach ($data as $product) {
 <!-- sezione main -->
 @section("mainContent")
   <!-- corpo della pagina -->
-  <main>
+  <main class="home-main">
     <div class="wrapper">
 
       <h2>LE LUNGHE</h2>
