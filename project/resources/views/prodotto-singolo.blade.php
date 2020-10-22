@@ -16,7 +16,9 @@
         <img src="{{$prodotto['src-p']}}" alt="">
       </div>
       <div class="wrapper-description">
-        <p class="description">{!! $prodotto["descrizione"] !!}</p>
+        <div class="description">
+          <p>{!!$prodotto["descrizione"]!!}</p>
+        </div>
       </div>
     </div>
 
