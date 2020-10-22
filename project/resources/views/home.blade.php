@@ -6,7 +6,8 @@ $lunga = [];
 $corta = [];
 $cortissima = [];
 
-foreach ($data as $product) {
+foreach ($data as $key => $product) {
+  $product["id"] = $key;
   if($product["tipo"] == "lunga"){
     $lunga[] = $product;
   } elseif ($product["tipo"] == "corta") {
@@ -39,8 +40,10 @@ foreach ($data as $product) {
         <li>
           <div class="layover">
             <div class="layover-icon">
-              <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
+              <h3><a href="{{route('prodotto-singolo', $product["id"])}}">{{$product["titolo"]}}</a></h3>
+              <a href="{{route('prodotto-singolo', $product["id"])}}">
+                <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              </a>
             </div>
             <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>
@@ -54,8 +57,10 @@ foreach ($data as $product) {
         <li>
           <div class="layover">
             <div class="layover-icon">
-              <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
+              <h3><a href="{{route('prodotto-singolo', $product["id"])}}">{{$product["titolo"]}}</a></h3>
+              <a href="{{route('prodotto-singolo', $product["id"])}}">
+                <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              </a>
             </div>
             <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>
@@ -69,8 +74,10 @@ foreach ($data as $product) {
         <li>
           <div class="layover">
             <div class="layover-icon">
-              <h3><a href="#">{{$product["titolo"]}}</a></h3>
-              <a href="#"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
+              <h3><a href="{{route('prodotto-singolo', $product["id"])}}">{{$product["titolo"]}}</a></h3>
+              <a href="{{route('prodotto-singolo', $product["id"])}}">
+                <img class="icona" src="{{asset('img/icon.svg')}}" alt="">
+              </a>
             </div>
             <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>

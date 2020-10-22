@@ -18,8 +18,8 @@
         <li>
           <div class="layover">
             <div class="layover-icon">
-              <h3><a href="prodotti/show/{{$product["id"]}}">{{$product["titolo"]}}</a></h3>
-              <a href="prodotti/show/{{$product["id"]}}"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
+              <h3><a href="{{route('prodotto-singolo', $product["id"])}}">{{$product["titolo"]}}</a></h3>
+              <a href="{{route('prodotto-singolo', $product["id"])}}"><img class="icona" src="{{asset('img/icon.svg')}}" alt=""></a>
             </div>
             <img class="img-prodotto" src="{{$product['src']}}" alt="img_pasta_lunga">
           </div>

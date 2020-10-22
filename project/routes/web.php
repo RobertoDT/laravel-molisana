@@ -38,10 +38,14 @@ Route::get('/prodotti/show/{id}', function ($id) {
     abort(404);
   }
 
-  $prodotto = config("pasta.$id");
+  $prodotti = config("pasta");
 
-  return view('prodotto-singolo', ["prodotto" => $prodotto]);
-});
+  $prodotto = $prodotti[$id];
+
+  $totale_prodotto = count($prodotti);
+
+  return view('prodotto-singolo', ["prodotto" => $prodotto, "id" => $id, "totale" => $totale_prodotto]);
+})->where('id', '[0-9]+')->name("prodotto-singolo");
 
 Route::get('/news', function () {
     return view('news');
